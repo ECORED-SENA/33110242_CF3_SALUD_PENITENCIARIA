@@ -35,13 +35,14 @@ html(lang="es")
                             .card-body
                                 ul.list-group.list-group-flush.list.my-n3.nav-temas
                                     +navTemaItem('play', 'Introducción', '#introduccion')
-                                    +navTemaItem('1', 'Noción de derecho penitenciario', '#tema-1')
-                                    +navTemaItem('2', 'Marco normativo del Sistema Nacional Penitenciario y Carcelario', '#tema-2')
-                                    +navTemaItem('3', 'Tratamiento penitenciario en salud en Colombia', '#tema-3')
-                                    +navTemaItem('4', 'Glosario', '#glosario')
-                                    +navTemaItem('5', 'Material complementario', '#anexos')
-                                    +navTemaItem('6', 'Referencias bibliográficas', '#referencias')
-
+                                    +navTemaItem('1', 'Sistema de Seguridad y Salud en el trabajo', '#tema-1')
+                                    +navTemaItem('2', 'Identificación de peligros y evaluación de riesgos', '#tema-2')
+                                    +navTemaItem('3', 'Riesgo psicosocial', '#tema-3')
+                                    +navTemaItem('4', 'Promoción de la salud y prevención de la enfermedad en entornos laborales', '#tema-4')
+                                    +navTemaItem('5', 'Recomendaciones de seguridad en establecimientos penitenciarios', '#tema-5')
+                                    +navTemaItem('glosary', 'Glosario', '#glosario')
+                                    +navTemaItem('folder', 'Material complementario', '#anexos')
+                                    +navTemaItem('references', 'Referencias bibliográficas', '#referencias')
 
         section#mainContent         
             #introduccion
@@ -52,6 +53,10 @@ html(lang="es")
                 include pages/tema-2.pug
             #tema-3
                 include pages/tema-3.pug
+            #tema-4
+                include pages/tema-4.pug
+            #tema-5
+                include pages/tema-5.pug
             #glosario
                 include pages/glosario.pug
             #anexos
